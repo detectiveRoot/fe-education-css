@@ -1,0 +1,131 @@
+body {
+    width: 1920px;
+    margin: 0;
+
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+
+    background-color: #85A5D4;
+}
+
+main {
+    width: 900px;
+    height: 338px;
+    margin: 0 auto;
+    margin-top: 320px;
+
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 15px 30px #0E152F40;
+}
+
+.price-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 20px 24px;
+
+    list-style: none;
+}
+
+.price-item {
+    position: relative;
+    
+    width: 208px;
+    height: 258px;
+    padding: 20px 36px;
+}
+
+.price-item:hover {
+    background-color: #F6F6F6;
+    border-radius: 4px;
+}
+
+.price-item_mobile::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+
+    background-image: url("img/device.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+}
+
+.price-item_desktop::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+
+    background-image: url("img/laptop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+}
+
+.price-item_tv::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+
+    background-image: url("img/monitor.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+}
+
+.price-item__link {
+    display: block;
+
+    color: #5673D5;
+    text-decoration: none;
+}
+
+.price-item__title {
+    margin: 0;
+    margin-bottom: 20px;
+    
+    font-size: 18px;
+    line-height: 21.09px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.price-item__description {
+    margin: 0;
+
+    font-size: 13px;
+    line-height: 19px;
+    text-align: center;
+    color: #A7A7A7;
+}
+
+.price-item__price {
+    position: absolute;
+    top: 70%;
+    bottom: 0;
+    left: 32.5%;
+
+    font-size: 30px;
+    line-height: 35.16px;
+    font-weight: 600;
+}
+
+sup { 
+    font-size: 55%;
+}
+
+.price-item__month {
+    font-size: 13px;
+    line-height: 15.23px;
+    font-weight: 400;
+}
