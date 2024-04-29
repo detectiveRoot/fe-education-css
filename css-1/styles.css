@@ -1,5 +1,15 @@
+html {
+    max-width: 1920px;
+    height: 100%;
+    
+}
+
 body {
-    width: 1920px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%; 
     margin: 0;
 
     font-family: Roboto, sans-serif;
@@ -12,7 +22,6 @@ main {
     width: 900px;
     height: 338px;
     margin: 0 auto;
-    margin-top: 320px;
 
     background-color: #ffffff;
     border-radius: 4px;
@@ -28,66 +37,26 @@ main {
     list-style: none;
 }
 
-.price-item {
-    position: relative;
-    
+.price-item__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     width: 208px;
     height: 258px;
     padding: 20px 36px;
+    
+    color: #5673D5;
+    text-decoration: none;
 }
 
-.price-item:hover {
+.price-item__link:hover {
     background-color: #F6F6F6;
     border-radius: 4px;
 }
 
-.price-item_mobile::before {
-    content: "";
-    display: block;
-    width: 70px;
-    height: 70px;
-    margin: 0 auto;
+.price-item__img {
     margin-bottom: 35px;
-
-    background-image: url("img/device.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 70px 70px;
-}
-
-.price-item_desktop::before {
-    content: "";
-    display: block;
-    width: 70px;
-    height: 70px;
-    margin: 0 auto;
-    margin-bottom: 35px;
-
-    background-image: url("img/laptop.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 70px 70px;
-}
-
-.price-item_tv::before {
-    content: "";
-    display: block;
-    width: 70px;
-    height: 70px;
-    margin: 0 auto;
-    margin-bottom: 35px;
-
-    background-image: url("img/monitor.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 70px 70px;
-}
-
-.price-item__link {
-    display: block;
-
-    color: #5673D5;
-    text-decoration: none;
 }
 
 .price-item__title {
@@ -98,10 +67,12 @@ main {
     line-height: 21.09px;
     font-weight: 600;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .price-item__description {
     margin: 0;
+    margin-bottom: auto;
 
     font-size: 13px;
     line-height: 19px;
@@ -110,10 +81,7 @@ main {
 }
 
 .price-item__price {
-    position: absolute;
-    top: 70%;
-    bottom: 0;
-    left: 32.5%;
+    margin: 0;
 
     font-size: 30px;
     line-height: 35.16px;
@@ -121,7 +89,7 @@ main {
 }
 
 sup { 
-    font-size: 55%;
+    font-size: 0.6em;
 }
 
 .price-item__month {
