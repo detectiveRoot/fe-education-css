@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 1 - Step 2</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main>
+    <div class="dots-container">
+      <span class="dot dot_active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+    <form class="payment-form" action="#" method="post">
+      <h1 class="title">PAYMENT METHOD</h1>
+      <ul class="payment-list">
+        <li class="payment-item">
+          <input class="payment-item__input" id="visa" type="radio" name="payment-method">
+          <label class="payment-item__button" for="visa">
+            <img class="payment-item__logo" src="img/visa.svg" alt="Visa logo">
+            <p class="payment-item__name">VISA</p>
+          </label>
+        </li>
+        <li class="payment-item">
+          <input class="payment-item__input" id="mastercard" type="radio" name="payment-method" checked>
+          <label class="payment-item__button" for="mastercard">
+            <img class="payment-item__logo" src="img/mastercard.svg" alt="Mastercard logo">
+            <p class="payment-item__name">MASTERCARD</p>  
+          </label>
+        </li>
+        <li class="payment-item">
+          <input class="payment-item__input" id="maestro" type="radio" name="payment-method">
+          <label class="payment-item__button" for="maestro">
+            <img class="payment-item__logo" src="img/maestro.svg" alt="Maestro logo">
+            <p class="payment-item__name">MAESTRO</p>
+          </label>
+        </li>
+      </ul>
+      <button class="next-step-button" type="submit">
+        <p class="next-step-button__p">NEXT STEP</p>
+      </button>
+    </form>
+  </main>
+</body>
+</html>
