@@ -11,34 +11,34 @@
 <body>
   <main class="chat">
     <header class="chat__header">
-      <span class="chat__name-dot"></span>
+      <span class="chat__online-dot"></span>
       <h1 class="chat__name">MARK ZUCKERBER</h1>
       <button class="close-btn">
         <img class="close-btn__icon" src="img/close.svg" alt="Close chat">
       </button>
     </header>
     <section class="chat__content">
-      <span class="chat__data">TODAY</span>
+      <span class="chat__date">TODAY</span>
       <div class="chat__messages">
-        <div class="message message_user-1">
-          <time class="message__time">10:53</time>
+        <div class="message message_foreign">
+          <time class="message__time" datetime="10:53">10:53</time>
           <p class="message__text">
             Hi, Mark! I made a new design for Messenger App.
           </p>
         </div>
-        <div class="message message_user-2">
-          <time class="message__time">10:57</time>
+        <div class="message message_self">
+          <time class="message__time" datetime="10:57">10:57</time>
           <p class="message__text">
             Yo! Send it to my assistant and we'll review it during the year.
           </p>
         </div>
-        <div class="message message_user-1">
-          <time class="message__time">11:03</time>
+        <div class="message message_foreign">
+          <time class="message__time" datetime="11:03">11:03</time>
           <p class="message__text">
             But Mark...
           </p>
         </div>
-        <div class="message message_user-2 message_blocked">
+        <div class="message message_self message_blocked">
           <p class="message__text">
             You were blocked by the user.
           </p>
@@ -46,7 +46,7 @@
       </div>
     </section>
     <form class="chat__send-form send-form" action="#" method="post">
-      <textarea class="send-form__text" cols="35" rows="1" name="message" placeholder="Enter your message"></textarea>
+      <textarea class="send-form__text" cols="35" rows="2" name="message" placeholder="Enter your message"></textarea>
       <button class="send-form__btn" type="submit">SEND</button>
     </form>
   </main>
