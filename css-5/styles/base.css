@@ -81,6 +81,8 @@ body {
 }
 
 .navigation-list__link {
+    display: block;
+
     color: var(--color-black);
     text-decoration: none;
 
@@ -94,9 +96,12 @@ body {
 
 .content {
     max-width: 640px;
-    margin-left: auto;
     padding-left: 100px;
     padding-right: 90px;
+}
+
+.page__content {
+    margin-left: auto;
 }
 
 .content__title {
@@ -106,6 +111,7 @@ body {
     font-family: "Playfair Display", serif;
     font-size: 60px;
     line-height: 67px;
+    text-wrap: pretty;
 }
 
 .content__title::after {
@@ -134,10 +140,7 @@ body {
 
 .content__wrapper {
     display: flex;
-}
-
-.content__preview-wrapper {
-    margin-right: 45px;
+    gap: 45px;
 }
 
 .content__preview-link {
@@ -151,8 +154,8 @@ body {
 
 .content__preview-link::after {
     position: absolute;
-    top: 36px;
-    left: 68px;
+    top: 32%;
+    left: 39%;
 
     width: 40px;
     height: 40px;
@@ -185,28 +188,38 @@ body {
 .photos-link__arrow {
     width: 14px;
     height: 14px;
+
+    transform: translateY(-1px);
 }
 
 .description {
-    display: block;
-    width: 230px;
-
     font-weight: 300;
     font-size: 16px;
     line-height: 30px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 992px) {
     .page {
-        width: 320px;
+        background-image: none;
+    }
+
+    .page__content {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .page {
+        width: 100vw;
         height: 100vh;
 
-        background-position: -190px -410px;
-        background-size: 175%;
+        background: url(../img/background.jpg) no-repeat 80% 120% /* -190px -414px */ / 175% var(--color-white);
     }
+
     .page_overlay {
         position: relative;
     }
+
     .page_overlay::before {
         z-index: 1;
         position: absolute;
@@ -219,21 +232,26 @@ body {
         background-color: rgba(0, 0, 0, 0.4);
         content: '';
     }
+
     .page__header {
         padding: 15px;
         margin-bottom: 15px;
     }
+
     .back-link,
     .back-link__arrow {
         opacity: 1;
     }
+
     .back-link__arrow {
         width: 22px;
         height: 22px;
     }
+
     .back-link__text {
         display: none;
     }
+
     .menu-btn {  
         z-index: 3;  
         position: relative;    
@@ -246,6 +264,7 @@ body {
         border: none;
         background: inherit;
     }
+
     .menu-btn__burger {
         position: absolute;
         top: 9px;
@@ -256,6 +275,7 @@ body {
         background-color: var(--color-black);
         transition: transform 0.2s;
     }
+
     .menu-btn::after,
     .menu-btn::before {
         position: absolute;
@@ -268,23 +288,29 @@ body {
         content: '';
         transition: transform 0.2s;
     }
+
     .menu-btn::after {
         bottom: 0;
     }
+
     .menu-btn::before {
         top: 0;
     }
+
     .menu-btn.menu-btn_active::before {
         transform: rotate(45deg);
         top: 10px;
     }
+
     .menu-btn.menu-btn_active::after {
         transform: rotate(-45deg);
         bottom: 9px;
     }
+
     .menu-btn_active .menu-btn__burger {
         transform: scale(0);
     }
+
     .navigation-list {
         z-index: 2;
         position: fixed;
@@ -297,9 +323,11 @@ body {
 
         background-color: var(--color-white);
     }
+
     .navigation-list_active {
         top: 0;
     }
+
     .navigation-list__link {
         display: block;
 
@@ -310,15 +338,17 @@ body {
         border-top: var(--color-gray) solid 2px;
         opacity: 1;
     }
+
     .navigation-list__item:first-child .navigation-list__link {
         padding-top: 5px;
         border-top: none;
     }
+
     .content {
         margin: 0;
-        padding: 0 /* 15px */;
-        
+        padding: 0;
     }
+
     .content__title {
         margin-bottom: 20px;
         padding: 0 15px;
@@ -326,42 +356,49 @@ body {
         font-size: 40px;
         line-height: 44px;
     }
+
     .content__info {
         margin-bottom: 30px;
         padding: 0 15px;
         
         font-size: 16px;
     }
+
     .content__title::after {
         display: none;
     }
+
     .content__wrapper {
         display: block;
     }
+
     .content__preview-wrapper {
         margin: 0 0 30px;
         padding: 0 15px;
     }
+
     .photos-link {
         gap: 10px;
 
         color: var(--color-white);
     }
+
     .photos-link__arrow {
         width: 22px;
         height: 22px;
 
         fill: var(--color-white);
     }
+
     .description-wrapper {
-        padding: 15px 15px 70px;
+        padding: 15px 15px 100%;
         background-color: var(--color-white);
     }
+
     .description {
         width: 280px;
 
         font-size: 14px;
         line-height: 24px;
-            
     }
 }
