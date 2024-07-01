@@ -22,13 +22,16 @@
 .page {
     min-width: 1440px;
 
-    background: url(../img/background.jpg) no-repeat top / 100% var(--color-white);
+    background: url(../img/background.jpg) no-repeat top / 100% auto var(--color-white);
 }
 
 .header {
     display: flex;
     align-items: center;
     padding: 20px 0;
+}
+
+.content-width {
     width: 1140px;
 }
 
@@ -56,7 +59,7 @@
 
 .header-nav__list {
     display: flex;
-    gap: 60px;
+    gap: 50px;
 
     font-size: 16px;
     line-height: 1.5em;
@@ -64,6 +67,7 @@
 
 .header-nav__link {
     display: block;
+    padding: 5px;
 
     color: inherit;
     text-decoration: none;
@@ -160,9 +164,13 @@
 }
 
 .awards {
-    padding: 40px 80px;
-
     background-color: var(--color-light-gray);
+}
+
+.awards__wrapper {
+    padding: 40px 80px;
+    margin: 0 auto;
+    width: fit-content;
 }
 
 .content__awards {
@@ -215,7 +223,6 @@
 
 .benefits {
     padding: 0 20px 20px;
-    width: 1140px;
 }
 
 .content__benefits {
@@ -284,23 +291,23 @@
 }
 
 .benefits-card_theme_cash {
-    background: url(../img/benefit-1.jpg) no-repeat;
+    background: url(../img/benefit-cash.jpg) no-repeat;
 }
 
 .benefits-card_theme_paycheck {
-    background: url(../img/benefit-2.jpg) no-repeat;
+    background: url(../img/benefit-paycheck.jpg) no-repeat;
 }
 
 .benefits-card_theme_cashback {
-    background: url(../img/benefit-3.jpg) no-repeat;
+    background: url(../img/benefit-cashback.jpg) no-repeat;
 }
 
 .benefits-card_theme_atms {
-    background: url(../img/benefit-4.jpg) no-repeat;
+    background: url(../img/benefit-atms.jpg) no-repeat;
 }
 
 .benefits-card_theme_support {
-    background: url(../img/benefit-5.jpg) no-repeat;
+    background: url(../img/benefit-support.jpg) no-repeat;
 }
 
 .partners {
@@ -341,8 +348,8 @@
     width: 350px;
 }
 
-.card-color {
-    width: 1140px;
+.partners__company {
+    width: 100%;
 }
 
 .content__card-color {
