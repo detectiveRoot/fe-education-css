@@ -1,6 +1,6 @@
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     :root {
-    --font-size-xl: 44px;
+        --font-size-xl: 44px;
     }
 
     .page {
@@ -112,8 +112,7 @@
     }
     
     .content__benefit {
-        margin: 0;
-        margin-bottom: 96px;
+        margin: 0 auto 96px;
     }
     
     .benefit__wrapper {

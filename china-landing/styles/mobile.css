@@ -1,4 +1,4 @@
-@media (max-width: 375px) {
+@media (max-width: 425px) {
     :root {
         --font-size-m: 15px;
         --font-size-lg: 18px;
@@ -23,9 +23,9 @@
     }
     
     .content__lead::before {
-        right: -5%;
+        right: -15%;
     
-        width: 110%;
+        width: 130%;
         height: 60%;
     }
     
