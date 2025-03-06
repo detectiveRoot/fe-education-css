@@ -49,14 +49,23 @@ function focusToPrevious(event) {
   }
 }
 
-function alertValue(event) {
-  event.preventDefault();
-
-  let code = Array.from(inputs).map(input => input.value).join("");
+function alertValue() {
+  let code = [...inputs].map(input => input.value).join("");
+  
   alert(`Value is ${code}`);
+}
+
+function sendSubmit() {
+  let allFilled = [...inputs].every(input => input.value);
+
+  if (allFilled) {
+    alertValue();
+    form.submit();
+  }
 }
 
 inputGroup.addEventListener("mousedown", focusFirstEmpty);
 inputGroup.addEventListener("input", focusToNext);
+inputGroup.addEventListener("input", sendSubmit);
 inputGroup.addEventListener("keydown", focusToPrevious);
 form.addEventListener("submit", alertValue);
