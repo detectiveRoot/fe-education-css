@@ -22,8 +22,8 @@ function syncButtons() {
 buttonsContainer.addEventListener('click', function(event) {
   let button = event.target;
 
-  if (!button.classList.contains('sort-button')) return;
-  if (button.classList.contains('sort-button_active')) return;
+  if (!button.classList.contains('sort-button') || 
+    button.classList.contains('sort-button_active')) return;
 
   let sortType = button.dataset.sort;
 
