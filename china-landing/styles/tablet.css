@@ -1,0 +1,392 @@
+@media (max-width: 1024px) {
+    :root {
+        --font-size-xl: 44px;
+    }
+
+    .page {
+        min-width: 768px;
+        padding-bottom: 71px;
+    }
+    
+    .content-center {
+        width: 690px;
+    }
+
+    .hidden {
+        display: none;
+    }
+    
+    .lead {
+        padding-top: 0;
+    }
+
+    .content__lead {
+        margin-bottom: 88px;
+    }
+    
+    .content__lead::before {
+        top: 0;
+        right: -7%;
+    
+        width: 27%;
+        height: 56.8%;
+    }
+    
+    .lead__wrapper {
+        flex-direction: column;
+        gap: 60px;
+        margin-bottom: 41px;
+    }
+
+    .lead__container {
+        width: 525px;
+    }
+    
+    .lead__title {
+        margin-bottom: 28px;
+    
+        font-size: var(--font-size-xl);
+    }
+    
+    .lead__desc {
+        margin-bottom: 54px;
+        margin-right: 0;
+    }
+
+    
+    .lead-trucks {
+        width: 690px;
+        height: 314px;
+
+        border-radius: 15px 15px 15px 0;
+    }
+
+    .services {
+        flex-direction: column;
+        gap: 16px;
+        padding: 0;
+    
+        box-shadow: none;
+        border-radius: none;
+    }
+    
+    .services__item {
+        flex-direction: row;
+        gap: 32px;
+        width: 690px;
+        padding: 32px 140px 40px 32px;
+    
+        border-left: none;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+        border-radius: 20px;
+    }
+
+    .services__name {
+        margin-top: 3px;
+        margin-bottom: 13px;
+    }
+    
+    .services__desc {
+        margin-bottom: 0;
+    }
+
+    /* Опрос */
+
+    .content__survey {
+        margin-bottom: 88px;
+    }
+    
+    .survey__title {
+        margin-bottom: 22px;
+    }
+    
+    .survey__desc {
+        margin-bottom: 40px;
+    }
+
+    /* Почему выгоднее */
+
+    .benefit {
+        width: 768px;
+        padding-right: 0;
+    }
+    
+    .content__benefit {
+        margin: 0 auto 96px;
+    }
+    
+    .benefit__wrapper {
+        width: 768px;
+        padding: 130px 39px 145px;
+        margin-bottom: 48px;
+    
+        background: linear-gradient(50deg, rgba(11,117,114,1) 53%,
+         rgba(11,117,114,0.3) 53%, rgba(11,117,114,0.3) 62%, transparent 62%),
+         url(../img/truck.jpg) no-repeat -70% 0% / auto 100%;
+    }
+    
+    .benefit__title {
+        width: 400px;
+    }
+    
+    .benefit__list {
+        row-gap: 44px;
+        padding: 0 39px;
+    }
+    
+    .benefit__item {
+        gap: 48px;
+        width: 516px;
+    }
+    
+    .benefit__icon {
+        width: 88px;
+        height: 88px;
+    }
+
+    /* Выполненные работы */
+        
+    .content__work {
+        margin-bottom: 84px;
+    }
+    
+    .work__desc {
+        margin-bottom: 34px;
+    }
+    
+    .carousel {
+        flex-direction: column;
+        gap: 34px;
+    }
+    
+    .work__carousel {
+        margin-bottom: 42px;
+    }
+    
+    .carousel__item {
+        width: 690px;
+    }
+
+    .carousel__photo {
+        width: 690px;
+    }
+    
+    .photo-work {    
+        transform: translateY(-110px);
+    }    
+    
+    .carousel__content {
+        padding-bottom: 45px;
+    }
+
+    /* Клиенты */
+
+    .clients {
+        flex-direction: column;
+        padding: 64px 42px 64px 39px;
+    
+        background-position: 7% -12%;
+        background-size: 70%;
+    }
+    
+    .content__clients {
+        width: 768px;
+        margin-bottom: 88px;
+    }
+    
+    .clients__title {
+        width: 328px;
+        margin: 0 0 35px;
+    }
+    
+    .clients__content {
+        width: 690px;
+        padding: 24px 51px 64px;
+    }
+    
+    .clients__header {
+        padding: 0 9px 20px;
+        margin-bottom: 24px;
+    }
+
+    .clients-table__col {
+        padding: 19px 16px 10px;
+    }
+
+    /* Этапы поставки */
+
+    .content__stages {
+        margin-bottom: 88px;
+    }
+    
+    .stages__list {
+        gap: 16px;
+    }
+    
+    .stages-item {
+        padding: 40px 70px 40px 79px;
+    }
+
+    .stages-item::before {
+        left: -8%;
+    }
+    
+    .stages-item::after {
+        left: -10.5%;
+    }
+            
+    .stages-item__photo {
+        display: none;
+    }
+    
+    .stages-item__desc {
+        width: 492px;
+    }
+
+    /* Нам доверяют */
+    
+    .content__partners {
+        margin-bottom: 75px;
+    }
+    
+    .partners__title {
+        margin-bottom: 45px;
+    }
+    
+    .partners-list {
+        row-gap: 47px;
+        margin-left: 20px;
+    }
+    
+    .partner {
+        width: 325px;
+        padding-right: 80px;
+    }
+    
+    .partner:nth-last-child(2n+1) {
+        border: none;
+    }
+
+    /* Сотрудники */
+
+    .content__employees {
+        margin-bottom: 100px;
+    }
+    
+    .employees__title {
+        margin-bottom: 45px;
+    }
+    
+    .employee {
+        flex-direction: column;
+        gap: 15px;
+        width: 330px;
+        padding: 24px 60px 30px;
+    }
+    
+    .employee__photo {
+        width: 100px;
+        height: 100px;
+        margin: 0;
+    }
+
+    .employee__name {
+        margin-top: 0;
+    }
+
+    /* Контакты */
+
+    .content__contacts {
+        margin-bottom: 88px;
+    }
+    
+    .contacts__title {
+        margin-bottom: 52px;
+    }
+    
+    .contacts__wrapper {
+        gap: 60px;
+    }
+    
+    .contacts__list {
+        margin-top: 0;
+    }
+    
+    .legal-info {
+        width: 690px;
+        padding: 32px 28px 44px;
+    }
+    
+    .legal-info__name {
+        margin-right: 13px;
+    }
+
+    /* Свяжитесь с нами */
+        
+    .contact-us {
+        padding: 56px 56px 48px;
+
+        background: var(--color-green);
+    }
+    
+    .content__contact-us {
+        margin-bottom: 88px;
+    }
+    
+    .contact-us__title {
+        margin-bottom: 50px;
+    }
+    
+    .application {
+        width: 579px;
+    }
+
+    /* Ваши данные */
+
+    .content__entered-data {
+        margin-bottom: 88px;
+    }
+    
+    .entered-data__title {
+        margin-bottom: 29px;
+    }
+    
+    .entered-data__content {
+        padding: 32px 40px 48px;
+    }
+    
+    .entered-data__text {
+        width: 578px;
+        margin-bottom: 44px;
+    }
+    
+    .entered-data__tech {
+        margin-bottom: 44px;
+    }
+
+    .entered-data__btn {
+        margin-top: 67px;
+    }
+
+    /* Видео */
+    
+    .video__desc {
+        width: 690px;
+        margin-bottom: 42px;
+    }
+    
+    .video-link,
+    .video-link::before {
+        width: 690px;
+        height: 433px;
+    }
+        
+    .video-link::after {
+        top: 38%;
+        left: 42%;
+    }
+
+    .video-preview {
+        transform: scale(1.16) translateY(4%);
+    }
+}

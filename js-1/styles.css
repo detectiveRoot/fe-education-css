@@ -1,0 +1,98 @@
+html {
+  height: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+
+  background-color: #82B9F9;
+}
+
+.sort {
+  width: 710px;
+  padding: 34px;
+
+  background-color: white;
+  border: 2px solid lightgrey;
+  border-radius: 8px;
+}
+
+.buttons-container {
+  display: flex;
+}
+
+.sort-button {
+  padding: 15px;
+
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  
+  background-color: white;
+  border: 4px solid #4D8BFF;
+  border-left: none;
+  cursor: pointer;
+}
+
+.sort-button:first-child {
+  border-left: 4px solid #4D8BFF;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.sort-button:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.sort-button:hover {
+  background-color: rgba(77, 139, 255, 0.3);
+}
+
+.sort-button:focus,
+.sort-select:focus {
+  box-shadow: 0 0 0 4px rgba(77, 139, 255, 0.3);
+  outline: none;
+}
+
+.sort-button_active {
+  color: white;
+  background-color: #4D8BFF;
+}
+
+.sort-button_active:hover {
+  background-color: #4D8BFF;
+}
+
+.sort-select {
+  display: none;
+  width: 640px;
+  padding: 15px;
+  
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  
+  background-color: white;
+  border: 4px solid #4D8BFF;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .buttons-container {
+    display: none;
+  }
+
+  .sort-select {
+    display: block;
+  }
+}
