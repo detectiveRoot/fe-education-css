@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Segmented control</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="sort">
+    <div class="buttons-container">
+      <button class="sort-button sort-button_active" data-sort="price">Sort by price</button>
+      <button class="sort-button" data-sort="name">Sort by name</button>
+      <button class="sort-button" data-sort="relevance">Sort by relevance</button>
+    </div>
+    <select class="sort-select">
+      <option value="price">Sort by price</option>
+      <option value="name">Sort by name</option>
+      <option value="relevance">Sort by relevance</option>
+    </select>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
